@@ -2,12 +2,6 @@
 -e git+https://github.com/fdns/edx-sga@f3ad72b03e640e08af53f39497e1da42d5278f36#egg=edx-sga
 -e git+https://github.com/Stanford-Online/xblock-in-video-quiz@release/v0.1.7#egg=xblock_in_video_quiz
 -e git+https://github.com/eol-uchile/eol_completion@587766168d87b1d3db9c43c4bc1a47c6ad3a2757#egg=eol_completion
--e https://github.com/eol-uchile/eduabierta_register@9df14ef6931c1c93ceee782f61f6f036c0781e06#egg=eduabierta_register
+-e git+https://github.com/eol-uchile/eduabierta_register@c46c1e6ba34f85c816e2f039f1477400f1508cc6#egg=eduabierta_register
 fluent-logger==0.9.3
 python-json-logger==0.1.11
-
-
-
-
-
-
