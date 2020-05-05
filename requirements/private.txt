@@ -3,5 +3,5 @@
 -e git+https://github.com/Stanford-Online/xblock-in-video-quiz@release/v0.1.7#egg=xblock_in_video_quiz
 -e git+https://github.com/eol-uchile/eol_completion@587766168d87b1d3db9c43c4bc1a47c6ad3a2757#egg=eol_completion
 -e git+https://github.com/eol-uchile/eduabierta_register@c46c1e6ba34f85c816e2f039f1477400f1508cc6#egg=eduabierta_register
-fluent-logger==0.9.3
+fluent-logger==0.9.6
 python-json-logger==0.1.11
