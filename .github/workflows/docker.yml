@@ -17,13 +17,18 @@ jobs:
         run: git submodule update --init --recursive
 
       - name: Build OpenedX
-        run: docker build . --file ./Dockerfile --tag eoluchile/eduabierta-edx:${GITHUB_SHA} --tag eoluchile/eduabierta-edx:latest
+        run: docker build . --file ./Dockerfile --tag eoluchile/eduabierta-edx:${GITHUB_SHA} --tag eoluchile/eduabierta-edx:latest --target base
+
+      - name: Build static files for Open edX S3
+        run: docker build . --file ./Dockerfile --tag eoluchile/eduabierta-edx:static-${GITHUB_SHA} --tag eoluchile/eduabierta-edx:static-latest --target s3
 
       - name: Push
         run: |
           echo "${DOCKERHUB_PASSWORD}" | docker login --username ${DOCKERHUB_USER} --password-stdin
           docker push eoluchile/eduabierta-edx:${GITHUB_SHA}
           docker push eoluchile/eduabierta-edx:latest
+          docker push eoluchile/eduabierta-edx:static-${GITHUB_SHA}
+          docker push eoluchile/eduabierta-edx:static-latest
         env:
           DOCKERHUB_USER: ${{ secrets.DOCKERHUB_USER }}
           DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
