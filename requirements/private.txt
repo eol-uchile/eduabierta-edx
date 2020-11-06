@@ -3,6 +3,7 @@
 -e git+https://github.com/Stanford-Online/xblock-in-video-quiz@93624bd04a4b613ae53794fd97333192a606aaa8#egg=xblock_in_video_quiz
 -e git+https://github.com/eol-uchile/eol_completion@58b37d0d23dbe53d40a8467ac3cb12441c3b4147#egg=eol_completion
 -e git+https://github.com/eol-uchile/eduabierta_register@1f4e750c6f44a182c0ef2fe05e750e0ff3604a0f#egg=eduabierta_register
+-e git+https://github.com/eol-uchile/eol_duplicate_xblock@183ba0b5a1555f50c5949d72433e77701e4d082b#egg=eol_duplicate_xblock
 fluent-logger==0.9.6
 python-json-logger==0.1.11
 django-redis==4.9.0
